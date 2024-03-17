@@ -1,8 +1,10 @@
 // Import Router from express to handle route definitions
 const express = require('express');
-// const path = require('path');//TODO
 // Imports the routing files from ./routes directory
 const routes = require('./routes/index.js');
+// add path module to transform file paths
+const path = require('path');
+
 
 // initializes a new instance of the Express application
 const app = express();
