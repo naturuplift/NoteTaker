@@ -22,9 +22,9 @@ notes.post('/', (req, res) => {
     
     readAndAppend(newNote, dbPath)
       .then(() => res.json(newNote))
-      .catch((err) => res.error('Error saving note: ', err));
+      .catch((err) => res.status(500).json({ error: 'Error saving note' }));
   } else {
-    res.error('Error: Missing title or text for the note.');
+    res.status(400).json({ error: 'Missing title or text for the note.' });
   }
 });
 

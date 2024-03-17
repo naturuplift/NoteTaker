@@ -77,10 +77,35 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value
   };
-  saveNote(newNote).then(() => {
+  //check response status in fetch API to handle errors
+  saveNote(newNote)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to save note');
+    }
+    return response.json();
+  })
+  .then(() => {
     getAndRenderNotes();
     renderActiveNote();
+    showError(false);
+  })
+  .catch(error => {
+    console.error('Save Note Error:', error);
+    console.log('Missing title or text for the note.');
+    showError(true, 'Failed to save note. Please try again.');
   });
+};
+
+// show error when creating incomplete note
+const showError = (show, message = '') => {
+  const errorMessageDiv = document.getElementById('error-message');
+  if (show) {
+    errorMessageDiv.textContent = message;
+    errorMessageDiv.classList.remove('d-none');
+  } else {
+    errorMessageDiv.classList.add('d-none');
+  }
 };
 
 // Delete the clicked note
