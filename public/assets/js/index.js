@@ -3,6 +3,7 @@ let noteTitle;
 let noteText;
 let saveNoteBtn;
 let newNoteBtn;
+let clearBtn;
 let noteList;
 
 if (window.location.pathname === '/notes') {
