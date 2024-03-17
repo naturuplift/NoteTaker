@@ -9,18 +9,18 @@
     "id": "e27366d0-96ec-4b91-8d0e-18b326a8ab83"
   },
   {
-    "title": "aasd",
-    "text": "cgfdgdf",
-    "id": "0868fee5-0f16-4577-9b59-1c983e7b3943"
-  },
-  {
     "title": "Note class",
     "text": "new note for today",
     "id": "a91e0c6d-6e72-4744-b260-707e12bf7639"
   },
   {
-    "title": "",
+    "title": "Note taking",
     "text": "some notes taking",
     "id": "723f87c4-24cd-4716-906e-b30336cad644"
+  },
+  {
+    "title": "New Title",
+    "text": "New Note content",
+    "id": "2f31e50c-55c1-42cc-a790-e11a661e2d67"
   }
 ]
