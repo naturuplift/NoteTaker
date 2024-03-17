@@ -139,7 +139,7 @@ Feel free to reach out, contribute, or provide feedback to make the Note Taker A
 
 This project is licensed under the MIT License. See the [LICENSE][MIT] file for details.
 
-[live-application]: <>
+[live-application]: <https://notetaker-c6xh.onrender.com>
 [node-doc]: <https://nodejs.org/en/docs/>
 [render]: <https://dashboard.render.com/>
 [express-doc]: <https://www.npmjs.com/package/express>
