@@ -5,7 +5,7 @@ const router = require('express').Router();
 const notesRoutes = require('./notes');
 
 // Register notes route to be served under '/notes' path
-router.use('/', notesRoutes);
+router.use('/notes', notesRoutes);
 
 // Export the configured router to be used by main application
 module.exports = router;

@@ -22,14 +22,24 @@ const writeToFile = (destination, content) =>
  *  @returns {void} Nothing
  */
 const readAndAppend = (content, file) => {
-  fs.readFile(file, 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
-    } else {
-      const parsedData = JSON.parse(data);
-      parsedData.push(content);
-      writeToFile(file, parsedData);
-    }
+  return new Promise((resolve, reject) => {
+    fs.readFile(file, 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        const parsedData = JSON.parse(data);
+        parsedData.push(content);
+        fs.writeFile(file, JSON.stringify(parsedData, null, 4), (writeErr) => {
+          if (writeErr) {
+            console.error(writeErr);
+            reject(writeErr);
+          } else {
+            resolve();
+          }
+        });
+      }
+    });
   });
 };
 /**
