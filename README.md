@@ -78,7 +78,13 @@ To run the application locally:
   npm start
 ```
 
-2. Open your browser and navigate to http://localhost:3000.
+2. Open your browser and navigate to http://localhost:3000. This display landing page below:
+
+![image](https://github.com/naturuplift/NoteTaker/assets/23546356/f7ab71c7-9a11-467f-809b-4e3d9f86dd6a)
+
+4. Click on 'Get Started' to start creating notes as per image below:
+
+![image](https://github.com/naturuplift/NoteTaker/assets/23546356/e9a6f869-789d-4d7b-9f91-e13d85930bac)
 
 ### Verify the application routes using [Insomnia][insomnia]
 
