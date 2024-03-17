@@ -116,16 +116,6 @@ const handleNewNoteView = (e) => {
 };
 
 // Renders the appropriate buttons based on the state of the form
-// const handleRenderBtns = () => {
-//   show(clearBtn);
-//   if (!noteTitle.value.trim() && !noteText.value.trim()) {
-//     hide(clearBtn);
-//   } else if (!noteTitle.value.trim() || !noteText.value.trim()) {
-//     hide(saveNoteBtn);
-//   } else {
-//     show(saveNoteBtn);
-//   }
-// };
 const handleRenderBtns = () => {
   if (noteTitle.value.trim() || noteText.value.trim()) {
     show(saveNoteBtn);
@@ -203,11 +193,5 @@ if (window.location.pathname === '/notes') {
   noteForm.addEventListener('input', handleRenderBtns);
 }
 
-// Call handleRenderBtns on page load and after any input event
-// document.addEventListener('DOMContentLoaded', handleRenderBtns);
-// noteForm.addEventListener('input', handleRenderBtns);
-
-// // Ensure this function gets called appropriately to reflect the current state
-// const getAndRenderNotes = () => getNotes().then(renderNoteList).then(handleRenderBtns);
-
+// Ensure this function gets called appropriately to reflect the current state
 getAndRenderNotes();
