@@ -31,9 +31,9 @@
 
 Note Taker is a simple, easy-to-use application built to help small business owners and individuals keep track of their tasks and organize their thoughts efficiently. Utilizing an Express.js back end, it saves and retrieves note data from a JSON file, providing a persistent, lightweight solution for note management.
 
-[Live Application][live-application]
-
 ## Table of Contents
+
+- [Demo Video](#demo-video)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -42,6 +42,9 @@ Note Taker is a simple, easy-to-use application built to help small business own
 - [State Flow Diagram](#state-flow-diagram)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Demo Video
+[Open Demo video of Note Taker][live-application]
 
 ## Features
 -  **Create Notes:** Users can add new notes with a title and body text, which are then saved to a backend database.
