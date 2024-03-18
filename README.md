@@ -59,12 +59,12 @@ git clone https://github.com/naturuplift/NoteTaker.git
 
 2. Navigate into the application directory:
 ```bash
-  cd NoteTaker
+cd NoteTaker
 ```
 
 3. Install the necessary packages:
 ```bash
-  npm install
+npm install
 ```
 
 Before using the Note Taker application, make sure you have Node.js and npm (Node Package Manager) installed on your system.
@@ -75,7 +75,7 @@ To run the application locally:
 1. Start the server:
 
 ```sql
-  npm start
+npm start
 ```
 
 2. Open your browser and navigate to http://localhost:3000. This display landing page below:
