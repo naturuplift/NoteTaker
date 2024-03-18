@@ -33,7 +33,7 @@ Note Taker is a simple, easy-to-use application built to help small business own
 
 ## Table of Contents
 
-- [Demo Video](#demo-video)
+- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -43,8 +43,8 @@ Note Taker is a simple, easy-to-use application built to help small business own
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo Video
-[Open Demo video of Note Taker][live-application]
+## Demo
+[Open Demo of Note Taker][live-application]
 
 ## Features
 -  **Create Notes:** Users can add new notes with a title and body text, which are then saved to a backend database.
